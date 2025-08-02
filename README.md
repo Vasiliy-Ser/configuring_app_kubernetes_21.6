@@ -94,7 +94,7 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 
 ### Решение:
 
-Использую [deployment](https://github.com/Vasiliy-Ser/configuring_app_kubernetes_21.6/blob/968acd28d769b87b4b2bd8e1dc2e045ef3789ea8/src/nginx-multitool_1.yaml) и [service](https://github.com/Vasiliy-Ser/configuring_app_kubernetes_21.6/blob/968acd28d769b87b4b2bd8e1dc2e045ef3789ea8/src/service-nginx.yaml) без configmap. Создаю сертификат и ключ. Создал Kubernetes Secret из сертификата и запустил ingress, а также необходимо добавить запись в hosts
+Использую [deployment](https://github.com/Vasiliy-Ser/configuring_app_kubernetes_21.6/blob/968acd28d769b87b4b2bd8e1dc2e045ef3789ea8/src/nginx-multitool_2.yaml) и [service](https://github.com/Vasiliy-Ser/configuring_app_kubernetes_21.6/blob/968acd28d769b87b4b2bd8e1dc2e045ef3789ea8/src/service-nginx_2.yaml) без configmap. Создаю сертификат и ключ. Создал Kubernetes Secret из сертификата и запустил ingress, а также необходимо добавить запись в hosts
 ![answer3](https://github.com/Vasiliy-Ser/configuring_app_kubernetes_21.6/blob/968acd28d769b87b4b2bd8e1dc2e045ef3789ea8/png/4.png)  
 ![answer4](https://github.com/Vasiliy-Ser/configuring_app_kubernetes_21.6/blob/968acd28d769b87b4b2bd8e1dc2e045ef3789ea8/png/5.png)  
 На ВМ включаем ingress  
